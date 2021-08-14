@@ -26,3 +26,39 @@ for (const card of cards) {
     card.style.borderRadius = '30px';
 }
 
+//৫. কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
+
+
+document.getElementById('buy-button-clicked').addEventListener('click', function () {
+    console.log("button clicked");
+})
+
+
+//৬. এইবার নতুন করে সবগুলা buy now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা buy now বাটনে চাপ দিলে সেটা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো। 
+
+
+//for slider buttons
+const sliderItems = document.getElementsByClassName('panda-btn-buy-now');
+for (const sliderItem of sliderItems) {
+    sliderItem.addEventListener('click', function (event) {
+
+
+        //eita diye parentNode konta click kore ber korsi. See delegate video if needed.
+        // console.log(event.target.parentNode);
+
+
+
+        event.target.parentNode.removeChild(event.target);
+
+    });
+}
+
+
+//for shoes and backpack section buttons
+const items = document.getElementsByClassName('card');
+for (const item of items) {
+    item.addEventListener('click', function (event) {
+        // document.getElementById('item-container').removeChild(item);
+        event.target.parentNode.removeChild(event.target);
+    });
+}
