@@ -79,4 +79,15 @@ document.getElementById('email-input').addEventListener('keyup', toggleEmailButt
 addEventListener('change', toggleEmailButton);
 
 
+//৮. (অপশনাল) একটা মজার চ্যালেঞ্জ। কোন একটা ইমেজ এর উপরে mouseenter করলে সেই ইমেজটা চেইঞ্জ হয়ে যাবে। একটু গুগলে সার্চ দিয়ে দেখো। জিনিসটা কিভাবে করা যেতে পারে। 
 
+//https://www.w3schools.com/jsref/event_onmouseenter.asp
+
+
+function changeImg(x) {
+    x.style.height = "500px";
+    x.style.width = "500px";
+}
+
+
+//৯. (অপশনাল) নিচের যে LET'S STAY IN TOUCH আছে সেখানে কোন খালি জায়গায় ডাবল ক্লিক করলে ঐটার পিছনের কালার চেইঞ্জ হয়ে যাবে। 
