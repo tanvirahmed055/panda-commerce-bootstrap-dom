@@ -77,3 +77,6 @@ function toggleEmailButton(event) {
 
 document.getElementById('email-input').addEventListener('keyup', toggleEmailButton);
 addEventListener('change', toggleEmailButton);
+
+
+
