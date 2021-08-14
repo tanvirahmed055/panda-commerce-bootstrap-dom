@@ -13,3 +13,16 @@ for (const secondHeader of secondHeaders) {
 }
 
 
+//৩. ওই ওয়েবসাইট এ backpack আইডি দিয়ে একটা সেকশন আছে। সেই সেকশনের ব্যাকগ্রাউন্ড কালার tomato করে দিতে পারো কিনা। 
+const backpackSection = document.getElementById('backpack');
+
+backpackSection.style.backgroundColor = 'tomato';
+
+
+//৪. card ক্লাস যতগুলা জায়গায় ইউজ করা হয়েছে সবগুলা কার্ড এর বর্ডার রেডিয়াস ৩০px করে দিতে পারো কিনা 
+const cards = document.getElementsByClassName('card');
+
+for (const card of cards) {
+    card.style.borderRadius = '30px';
+}
+
