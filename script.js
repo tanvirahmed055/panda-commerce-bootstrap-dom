@@ -91,3 +91,9 @@ function changeImg(x) {
 
 
 //৯. (অপশনাল) নিচের যে LET'S STAY IN TOUCH আছে সেখানে কোন খালি জায়গায় ডাবল ক্লিক করলে ঐটার পিছনের কালার চেইঞ্জ হয়ে যাবে। 
+
+const touchSection = document.getElementById('subscribe');
+
+touchSection.addEventListener('dblclick', function () {
+    touchSection.style.backgroundColor = 'tomato';
+})
